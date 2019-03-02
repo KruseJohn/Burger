@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/KruseJohn/Burger/issues"
   },
-  "homepage": "https://github.com/KruseJohn/Burger#readme"
+  "homepage": "https://github.com/KruseJohn/Burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0"
+  }
 }

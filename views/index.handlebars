@@ -1,44 +1,57 @@
+<div class="container">
 
-<div id="wrapper">
-    <img src="assets/burger.png" alt="Burger"/>
+	<div class="jumbotron p-0 mx-auto">
+		<img src="/assets/img/burger.png" alt="burger" />
+		<h1> Eat-Da-Burger! </h1>
+	</div>
 
-    <h1>Eat-Da-Burgers!</h1>
+	<div class="row mt-5">
 
-    <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burgers-block devoured=false}}
-        {{/unless}}
-        {{each}}
-    </ul>
+		<div class="col-sm-5">
+			<ul class="list-group">
+				<h3 class="text-center">Burgers Ready to Eat!</h3>
+				{{#each burger_data}}
+				{{#unless this.devoured}}
+				<li class="list-group-item">
+					<div class="input-group">
+						<p>{{this.id}}. {{this.burger_name}}</p>
+						
+							<form class="devour-form">
+								<span><input type="hidden" class="burger_id" type="text" value={{this.id}}></span>
+								<button type="submit" <i class="fas fa-hamburger fa-2x"></i></button>
+								
+							</form>
+						
+					</div>
+				</li>
+				{{/unless}}
+				{{/each}}
+			</ul>
+		</div>
+		<div class="col-sm-2"></div>
+		<div class="col-sm-5">
+			<h3 class="text-center">Burgers Devoured!</h3>
+			{{#each burger_data}}
+			{{#if this.devoured}}
+			<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
+			<button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span
+				 class="fa fa-trash"></span></button>
+			{{/if}}
+			{{/each}}
+		</div>
 
-    <form class="create-form">
-        <h2>Add a Burger</h2>
+	</div>
 
-        <div class="form-group">
-            <label for="bur">Burger Name</label>
-            <input type="text" id="bur" name="name">
-        </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center enter_section">
 
-        <button type="submit">Add Burger</button>
+				<form action="/burgers/create" method="POST">
+					<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
+					<p>Enter a new burger you want to eat...</p>
+					<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+				</form>
 
-        <ul>
-            {{#each}}
-            {{#if devoured}}
-            {{> burgers/burgers-block devoured=true}}
-            {{/if}}
-            {{/each}}
-        </ul>
-
-        <h2>Devoured Burgers</h2>
-
-        <div class="form-group">
-            <label for="dev"></label>
-            <br>
-            <input type="text" id="dev" name="devoured"> 
-        </div>
-
-        <button type="submit">Devour it!</button>
-        
-    </form>
-</div>
+			</div>
+		</div>
+	</div>

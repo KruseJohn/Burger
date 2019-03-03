@@ -1,23 +1,48 @@
-#wrapper {
-    width: 720px;
-    background-color: aquamarine;
-    border-top-style: groove;
-    border-right-style: dashed;
-    border-bottom-style: groove;
-    border-left-style: dashed;
-}
-.create-form {
-    padding: 5px;
-    margin: 5px;
-    margin-left: 30px;
-} 
-
-#h1 {
+body {
+    background-color: #fdf1d7;
+  }
+  
+.jumbotron {
     text-align: center;
-}
+    background-color: #ffc95e;
+  }
 
-img {
+  img {
+    width: 300px;
+    height: auto;
+  }
+
+  h1 {
+    color: #ff3806;
+  }
+
+  .fas {
+    margin-left: 100px;
+  }
+  
+  #trashbutton {
     float: right;
-    display: block;
-    margin: 60px;
-}
+    padding: 5px;
+  }
+  
+  .enter_section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #enter_text {
+    width: 500px;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 28px;
+  }
+
+  #text-enter-button {
+    
+    margin-bottom: 28px;
+  }
+  
+  

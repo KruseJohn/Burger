@@ -11,14 +11,14 @@ This application demonstrates a simple full stack application with the front end
 
 The user may enter any burger name to add it to the menu. This also adds the new burger entry into the MySQL database. The initial burger entry is added as *ready to eat* on the menu and placed on the left side of the screen. The user may then eat any burger by clicking on the burger button, which moves it into the adjacent column and updates its status accordingly in the database.  The user may also choose to delete a burger once devoured, with the database reflecting this change as well...
 
-
+<br>
 ## Application Heroku Link
 The link below will give you direct access to Eat-Da-Burger web application using your web browser via the Heroku web service.
 
 <!-- Heroku References: https://peaceful-bayou-14500.herokuapp.com/ | https://git.heroku.com/evening-ridge-94356.git -->
 * [Eat-Da-Burger](https://peaceful-bayou-14500.herokuapp.com/)
 
-
+<br>
 ## Technology used
 - node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
 - heroku - [https://www.heroku.com/](https://www.heroku.com/)
@@ -27,10 +27,12 @@ The link below will give you direct access to Eat-Da-Burger web application usin
 - mysql NPM Package - [https://www.npmjs.com/package/mysql](https://www.npmjs.com/package/mysql)
 - inquirer NPM Package - [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)
 
+<br>
 ## Directory Structure (MVC)
 
 ![mvc](https://github.com/KruseJohn/Burger/blob/master/public/assets/img/mvc2.png)
 
+<br>
 ## Demo
 
 ![demo-gif](https://github.com/KruseJohn/Burger/blob/master/public/assets/img/demo.gif)

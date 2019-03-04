@@ -8,7 +8,7 @@
 
 	<div class="row mt-5">
 
-		<div class="col-sm-5">
+		<div class="col-5">
 			<ul class="list-group">
 				<h3 class="text-center">Burgers Ready to Eat!</h3>
 				<h6 class="text-center">(Click button to Devour It!)</h6>
@@ -30,15 +30,15 @@
 				{{/each}}
 			</ul>
 		</div>
-		<div class="col-sm-2"></div>
-		<div class="col-sm-5">
+		<div class="col-2"></div>
+		<div class="col-5">
 			<h3 class="text-center">Burgers Devoured!</h3>
 			<h6 class="text-center">(Click button to remove from list...)</h6>
 			{{#each burger_data}}
 			{{#if this.devoured}}
 			<li class="list-group-item">
 				<div class="input-group">
-					<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
+					<input class="form-control" id="form" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
 					<button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}">
 						<i class="fas fa-trash-alt fa-lg"></i>
 					</button>
@@ -52,11 +52,11 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 text-center enter_section">
+			<div class="col-12 text-center enter_section">
 
 				<form action="/burgers/create" method="POST">
-					<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
-					<p>Enter a new burger you want to eat...</p>
+					<input type="text" required class="form-control" name="burger_name" value="" id="enter_text" autofocus="autofocus">
+					<h6 class="text-center">Order a new tasty burger to eat...</h6>
 					<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
 				</form>
 

@@ -13,5 +13,17 @@ $(document).ready(function() {
         location.reload();
     })
 
-    })
+    });
+
+    $(".trashburger").on("click", function(event) {
+        event.preventDefault();
+
+        var id = $(this).data("id");
+
+        // Send the DELETE request.
+        $.ajax({
+            type: "DELETE",
+            url: "/burgers/" + id
+        }).then(location.reload());
+    });
 });

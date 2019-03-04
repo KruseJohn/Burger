@@ -1,5 +1,5 @@
 body {
-    background-color: #fdf1d7;
+    background-color: #ffc95e;
   }
   
 .jumbotron {
@@ -12,17 +12,32 @@ body {
     height: auto;
   }
 
+  hr {
+    border: 1px solid black;
+  }
+
   h1 {
     color: #ff3806;
   }
 
+  p {
+    padding-top: 6px;
+    padding-right: 28px;
+  }
+
   .fas {
-    margin-left: 100px;
+    padding-top: 0;
+    margin-top: 0;
   }
   
   #trashbutton {
     float: right;
-    padding: 5px;
+    padding: 4px;
+  }
+
+  .list-group-item {
+    background-color: #ffe8b7;
+    border: none;
   }
   
   .enter_section {
@@ -32,17 +47,42 @@ body {
   }
   
   #enter_text {
-    width: 500px;
+    width: 300px;
     height: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
-    font-size: 28px;
+    font-size: 20px;
   }
 
   #text-enter-button {
-    
     margin-bottom: 28px;
+  }
+
+  .form-control {
+    background-color: #ffe8b7;
+    border: none;
+  }
+      /* Google Chrome */
+  .form-control::-webkit-input-placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+      /* Mozilla Firefox */
+  .form-control::-moz-placeholder {
+    color: black;
+    font-weight: bold;
+  }
+      /* Internet Explorer */ 
+  .form-control:-ms-input-placeholder {
+    color: black;
+    font-weight: bold;
+  }
+      /* Opera */
+  .form-control:-o-input-placeholder {
+    color: black;
+    font-weight: bold;
   }
   
   

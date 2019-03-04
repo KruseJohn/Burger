@@ -3,6 +3,7 @@
 	<div class="jumbotron p-0 mx-auto">
 		<img src="/assets/img/burger.png" alt="burger" />
 		<h1> Eat-Da-Burger! </h1>
+		<hr>
 	</div>
 
 	<div class="row mt-5">
@@ -10,18 +11,19 @@
 		<div class="col-sm-5">
 			<ul class="list-group">
 				<h3 class="text-center">Burgers Ready to Eat!</h3>
+				<h6 class="text-center">(Click button to Devour It!)</h6>
 				{{#each burger_data}}
 				{{#unless this.devoured}}
 				<li class="list-group-item">
 					<div class="input-group">
-						<p>{{this.id}}. {{this.burger_name}}</p>
-						
-							<form class="devour-form">
-								<span><input type="hidden" class="burger_id" type="text" value={{this.id}}></span>
-								<button type="submit" <i class="fas fa-hamburger fa-2x"></i></button>
-								
-							</form>
-						
+						<p><strong>{{this.id}}. {{this.burger_name}}</strong></p>
+
+						<form class="devour-form">
+							<input type="hidden" class="burger_id" type="text" value={{this.id}}>
+							<button type="submit" style="background-color: #ffc95e"><i class="fas fa-hamburger fa-2x"></i></button>
+
+						</form>
+
 					</div>
 				</li>
 				{{/unless}}
@@ -31,11 +33,17 @@
 		<div class="col-sm-2"></div>
 		<div class="col-sm-5">
 			<h3 class="text-center">Burgers Devoured!</h3>
+			<h6 class="text-center">(Click button to remove from list...)</h6>
 			{{#each burger_data}}
 			{{#if this.devoured}}
-			<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
-			<button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span
-				 class="fa fa-trash"></span></button>
+			<li class="list-group-item">
+				<div class="input-group">
+					<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
+					<button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}">
+						<i class="fas fa-trash-alt fa-lg"></i>
+					</button>
+				</div>
+			</li>
 			{{/if}}
 			{{/each}}
 		</div>

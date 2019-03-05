@@ -22,10 +22,12 @@ The link below will give you direct access to Eat-Da-Burger web application usin
 
 
 ## Technology used
-- node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
-- heroku - [https://www.heroku.com/](https://www.heroku.com/)
+- Heroku - [https://www.heroku.com/](https://www.heroku.com/)
+- MySQL - [https://www.mysql.com/](https://www.mysql.com/)
+- Node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
 - body-parser NPM Package - [https://www.npmjs.com/package/body-parser](https://www.npmjs.com/package/body-parser)
 - express NPM Package - [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
+- express-handlebars NPM Package - [https://www.npmjs.com/package/express-handlebars](https://www.npmjs.com/package/express-handlebars)
 - mysql NPM Package - [https://www.npmjs.com/package/mysql](https://www.npmjs.com/package/mysql)
 - inquirer NPM Package - [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)
 

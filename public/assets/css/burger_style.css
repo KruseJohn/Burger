@@ -1,99 +1,100 @@
 body {
-    background-color: #ffc95e;
-  }
-  
+  background-color: #ffc95e;
+}
+
 .jumbotron {
-    text-align: center;
-    background-color: #ffc95e;
-  }
+  text-align: center;
+  background-color: #ffc95e;
+}
 
-  img {
-    width: 300px;
-    height: auto;
-  }
+img {
+  width: 300px;
+  height: auto;
+}
 
-  hr {
-    border: 1px solid black;
-  }
+hr {
+  border: 1px solid black;
+}
 
-  h1 {
-    color: #ff3806;
-  }
+h1 {
+  color: #ff3806;
+}
 
-  p {
-    padding-top: 6px;
-    padding-right: 28px;
-  }
+p {
+  padding-top: 6px;
+  padding-right: 28px;
+}
 
-  .fas {
-    padding-top: 0;
-    margin-top: 0;
-  }
-  
-  #trashbutton {
-    float: right;
-    padding: 3px;
-    margin: 0;
-  } 
+.fas {
+  padding-top: 0;
+  margin-top: 0;
+}
 
-  .list-group-item {
-    background-color: #ffe8b7;
-    border: 2px solid #ff3806;
-    border-radius: 24px;
-  }
-  
-  .enter_section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    
-  }
-  
-  #enter_text {
-    width: 300px;
-    height: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: auto;
-    font-size: 20px;
-    border-radius: 8px;
-  }
+#trashbutton {
+  float: right;
+  padding: 3px;
+  margin: 0;
+}
 
-  #text-enter-button {
-    margin-bottom: 28px;
-  }
+.list-group-item {
+  background-color: #ffe8b7;
+  border: 2px solid #ff3806;
+  border-radius: 24px;
+}
 
-  #form {
-    padding: 0;
-  }
+.enter_section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
-  .form-control {
-    background-color: #ffe8b7;
-    border: none;
-  }
-      /* Google Chrome */
-  .form-control::-webkit-input-placeholder {
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-  }
-      /* Mozilla Firefox */
-  .form-control::-moz-placeholder {
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-  }
-      /* Internet Explorer */ 
-  .form-control:-ms-input-placeholder {
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-  }
-      /* Opera */
-  .form-control:-o-input-placeholder {
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  
+#enter_text {
+  width: 300px;
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+#text-enter-button {
+  margin-bottom: 28px;
+}
+
+#form {
+  padding: 0;
+}
+
+.form-control {
+  background-color: #ffe8b7;
+  border: none;
+}
+
+/* Google Chrome */
+.form-control::-webkit-input-placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Mozilla Firefox */
+.form-control::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Internet Explorer */
+.form-control:-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Opera */
+.form-control:-o-input-placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}

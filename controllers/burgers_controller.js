@@ -1,3 +1,5 @@
+// The controller accepts input and converts it to commands for the model or view...
+
 var express = require("express");
 
 var router = express.Router();

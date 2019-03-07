@@ -1,3 +1,7 @@
+//  The model is the central component of the pattern. 
+//  It is the application's dynamic data structure, independent of the user interface. 
+//  It directly manages the data, logic and rules of the application...
+
 // Import the ORM to create functions that will interact with the database...
 var orm = require("../config/orm.js");
 
